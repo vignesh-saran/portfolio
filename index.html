@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/f33c2095a3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="image/logo.png" alt="Logo" class="logo">          
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Experience</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-square-xmark"  onclick="closemenu()"  ></i>
+                </ul>
+                <i class="fa-solid fa-bars"  onclick="openmenu()"></i>
+            </nav>
+            
+            <div class="header-text">
+                
+                <h1>Hi, I'm <span>Vignesh Saran T</span></h1>
+                <p>Data Analyst</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------------------------------about------------------------------------------------------ -->
+
+    <div id="about">
+        <div class="container">
+            <h1 class="sub-title"><span>A</span>bout</h1>
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="image/vignesh.jpg">
+                </div>
+                
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p> I am a young and enthusiastic individual, 
+                        highly motivated to work on team projects. 
+                        I aim to utilize and enhance my knowledge 
+                        and skills in data analysis while contributing to the growth of 
+                        the organization. My passion for analyzing data 
+                        and deriving actionable insights drives me to continually 
+                        learn and improve. I am eager to leverage my analytical 
+                        abilities and collaborative spirit to support 
+                        and advance the organization's objectives.</p>
+
+                    <div class="tab-titles">
+                     
+                        <p class="tab-links" onclick="opentab('education')"><span style="color: #0096FF;">E</span>ducation</p>
+                        <p class="tab-links" onclick="opentab('experience')"><span style="color: #0096FF;">E</span>xperience</p>
+                        <p class="tab-links  active-link" onclick="opentab('skills')"><span style="color: #0096FF;">S</span>kills</p>
+                        
+                    </div>
+
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Saranathan College of Engineering   | [2020-2024]</span><br>Bachelor of Engineering - Electronics and Communication Engineering</li>
+                            <li><span>AKKV Aarunadhu Matric Hr Sec School | [2019-2020]</span><br>HSC</li>
+                            <li><span>AKKV Aarunadhu Matric Hr Sec School | [2017-2018]</span><br>SSLC</li>
+                        </ul>
+                    </div>
+
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Python , Java , C , C++</span><br>Programming Languages</li>
+                            <li><span>Power BI and Pandas</span><br>Data Analysis</li>
+                            <li><span>MySQL and Mongodb</span><br>DBMS</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Internship - Cognizant on Forage | May2024</span><br>Artificial Intelligence</li>
+                            
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+ <!----------------------------------------Experience------------------------------------------->
+
+
+    <div id="services">
+        <h1 class="sub-title"><span style="color: #0096FF;">E</span>xperience</h1>
+        
+        <div class="container1">
+            <div class="services-list">
+
+                <div class="services-list-item">
+                    <i class="fa-brands fa-python"></i>
+                    <h2>Python Language</h2>
+                    <ul>
+                        <li><span>Python</span> - OOPs</li>
+                        <li><span>Web Scraping</span><br></li>
+                    </ul>
+                </div>
+
+
+                <div class="services-list-item">
+                    <i class="fa-solid fa-magnifying-glass-chart"></i>
+                    <h2>Data Analysis</h2>
+                    <ul>
+                        <li><span>Power BI </span><br></li>
+                        <li><span>Pandas</span><br></li>
+                        <li><span>Excel and MySQL</span><br></li>
+                    </ul>
+                </div>
+
+                <div class="services-list-item">
+                    <i class="fa-solid fa-database"></i>
+                    <h2>DBMS</h2>
+                    <ul>
+                        <li><span>MySql</span><br></li>
+                        <li><span>Mangodb</span><br></li>
+                    </ul>
+                </div>
+
+                
+                
+                <div class="services-list-item">
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <h2>Frontend Development</h2>
+                    <ul>
+                        <li><span>HTML</span><br></li>
+                        <li><span>CSS</span><br></li>
+                    </ul>
+                </div>
+
+
+                <div class="services-list-item">
+                    <i class="fa-solid fa-money-bill-trend-up"></i>
+                    <h2>Stock Market</h2>
+                    <ul>
+                        <li><span>Fundamental Analysis</span><br></li>
+                        <li><span>Technical Analysis</span><br></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- --------------------------------portfolio----------------------------------------------- -->
+
+    <div id="portfolio">
+        <div id="container1">
+            <h1 class="sub-title"><span style="color: #0096FF;">P</span>ortfolio</h1>
+            <div class="work-list">
+
+                <div class="work">
+                    <img src="image/stock.png">
+                    <div class="layer">
+                        <h3>Stock Market Prediction</h3>
+                        <p>Stock value is predicted using indicators like RSI, MACD, Bollinger Bands, 
+                            and volume, alongside LSTM models to forecast future prices based
+                            on historical data, achieving an accuracy of 80%.<br><i class="fa-brands fa-square-github"></i></p></p>
+                        <a href="https://github.com/vignesh-saran/NSE_Stock_Market_Prediction" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                    </div>               
+                </div>
+
+                
+                <div class="work">
+                    <img src= "image/powerbi.png">
+                    <div class="layer">
+                        <h3>Sales insights using PowerBI</h3>
+                        <p>The dashboard enabled quick, data-informed decisions by effectively 
+                            displaying sales trends, potentially raising revenue 
+                            by at least 7% in the next quarter.<br><i class="fa-brands fa-square-github"></i></p></p>
+                        <a href="https://github.com/vignesh-saran/Sales-insights-using-PowerBI" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                    </div>               
+                </div>
+
+                
+               <!--<div class="work">
+                    <img src="image/sales.png">
+                    <div class="layer">
+                        <h3>Sales insight using Pandas</h3>
+                        <p>the app connects you yo the talented people around the world.<br><i class="fa-brands fa-square-github"></i></p>
+                        <a href="https://github.com/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                    </div>               
+                </div>  --> 
+
+                <div class="work">
+                    <img src="image/ev.png">
+                    <div class="layer">
+                        <h3>IOT based fire accident prevention using 
+                            BMS in electric vehicles</h3>
+                        <p>The project enhances EV safety through IoT by continuously monitoring 
+                            battery parameters in real-time to prevent fire accidents and 
+                            displaying diagnostics onboard.<br><i class="fa-brands fa-square-github"></i></p></p>
+                        <a href="https://github.com/vignesh-saran/IOT-based-fire-accident-prevention-using-battery-management-system-in-electric-vehicles" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                    </div>               
+                </div>
+
+                
+                <div class="work">
+                    <img src= "image/sleep.png">
+                    <div class="layer">
+                        <h3>IOT based driver sleep detection system</h3>
+                        <p>To provide timely alerts aimed at preventing accidents caused by drowsy driving.<br><i class="fa-brands fa-square-github"></i></p></p>
+                        <a href="https://github.com/vignesh-saran/IOT_based_Driver-Sleep-Detection-System" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                    </div>               
+                </div>
+
+
+                
+                
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+    
+                <div class="contact-left">
+                    <h1 class="sub-title"><span style="color: #0096FF;">C</span>ontact</h1>
+                    <p><i class="fa-solid fa-envelope"></i><a href="mailto:vigneshvsinl123@gmail.com">vigneshvsinl123@gmail.com</a></p>
+                    <p><i class="fa-solid fa-phone"></i><a href="tel:+918870272324">8870272324</a></p>
+                    <div class="social-icons">
+                        <a href="http://www.linkedin.com/in/vignesh-saran-t-b06361265" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/vignesh-saran" target="_blank"><i class="fa-brands fa-square-github"></i></a>
+                    </div>
+    
+                    <div class="cv">
+                        <a href="#" target="_blank" class="btn btn2">video CV</a>
+                        <a href="image/vignesh_saran_resume__ (1) (3).pdf" target="_blank" class="btn btn2">Download CV</a>
+                    </div>
+                </div>
+    
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input name="Email" type="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Send</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+    
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &#169; 2024 Vignesh Saran T. All Rights Reserved.</p>
+        </div>
+    
+    </div>
+    
+
+
+
+    
+     <script src="script.js" async></script>
+       
+
+     
+</body>
+</html>
