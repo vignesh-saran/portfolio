@@ -506,6 +506,8 @@ form textarea {
 
 #msg{
     color: #7fff00;
+    margin: top -10px;
+    display: block;
 }
 
 /*-----------------MEDIA QURIES---------*/
